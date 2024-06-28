@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+
+
+.container {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    img {
+      width: 20px;
+    }
+  }
+
+  .skillItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 50px; /* Adjust for rounded corners */
+    transition: border 0.3s ease-in-out; /* Smooth transition for the border */
+  }
+  
+  .skillItem:hover {
+    cursor: pointer;
+    border: 1px solid #878787; /* Light border color */
+  }
+
+.skillSection {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .sectionHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust for spacing between icon and text */
+    font-family: 'Rubik', sans-serif; /* Use Rubik font with fallback */
+    font-size: 25px; /* Adjust font size as needed */
+    font-weight: 500; /* Adjust font weight as needed */
+    color: #6a6a6a; /* Adjust text color as needed */
+    text-align: center; /* Align text to the left */
+    margin-bottom: 10px;
+  }
+  
+  .sectionHeading svg {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+    stroke-width: 2;
+    stroke: currentColor;
+    fill: none;
+  }
+  
+  
+  .skillList {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 26ch;
+  }
+  
+  hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+  }
+  
+  @media (width >= 800px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 30px;
+  
+      p {
+        font-size: 20px;
+      }
+    }
+  
+    hr {
+      width: 300px;
+    }
+  }
